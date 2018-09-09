@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+<head>
+  <title>flask-html</title>
+  <meta charset="utf-8">
+  <script type = "text/javascript" src = "{{ url_for('static', filename = 'js/javascript_ex.js')}}"></script>
+  <link rel="stylesheet" href="{{ url_for('static',filename='css/css_ex.css') }}">
+
+</head>
+  <body>
+    <div id = "change">
+      <input type="button" value="black" onclick="styleChanger(this);">
+      <h2>여기 있는 문구는 색깔과 배경이 바뀝니다.</h2>
+    </div>
+
+    <div id = "css_part">
+      여기는 CSS가 적용되는 부분입니다.
+    </div>
+
+  </body>
+</html>
